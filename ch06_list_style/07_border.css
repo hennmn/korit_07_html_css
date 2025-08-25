@@ -1,0 +1,22 @@
+/* ul>li:first-child {
+  border-bottom: 1px solid;
+} */
+
+/*
+힌트 
+1. ul아이템 1, 혹은 5가 적용되어서는 안됨
+2. 그렇다면 선택자의 사용이 중요한데, 현재의  html에서는 class나 id가 전혀 적용되지 않았으므로 적당한 방식의 선택자를 고를 필요가 있음
+3. 이거 나중에 깃허브에서 끌고오기 
+ */
+
+
+
+ul>li:not(:last-child){
+  border-bottom: 1px solid black;
+}
+
+ul>li:not(:first){   
+  /* nth-child(1)로 고쳐써도 상관이 없겠네요. */
+  border-top: 1px solid black;
+}
+
